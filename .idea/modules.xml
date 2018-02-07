@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/MediaStoreSync.iml" filepath="$PROJECT_DIR$/MediaStoreSync.iml" />
+      <module fileurl="file://$PROJECT_DIR$/MediaStoreSync/MediaStoreSync-MediaStoreSync.iml" filepath="$PROJECT_DIR$/MediaStoreSync/MediaStoreSync-MediaStoreSync.iml" />
+    </modules>
+  </component>
+</project>

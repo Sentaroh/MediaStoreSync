@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/tabhost"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+        <TabWidget
+            android:id="@android:id/tabs"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:padding="5dp" >
+
+            <LinearLayout
+                android:id="@+id/main_statistics_tab"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+	            <CheckedTextView
+	                android:id="@+id/main_stat_ctv_use_delete"
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content"
+	                android:layout_marginLeft="5dp"
+	                android:checkMark="?android:attr/textCheckMark"
+	                android:gravity="center_vertical"
+	                android:text="@string/msgs_main_stat_use_delete"
+	                android:textAppearance="?android:attr/textAppearanceMedium" />
+	            <!-- android:checkMark="?android:attr/textCheckMark" -->
+	            <!-- android:checkMark="?android:attr/listChoiceIndicatorMultiple" -->
+                
+                <ScrollView
+                    android:id="@+id/scrollView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" >
+
+					    <LinearLayout
+					        android:layout_width="fill_parent"
+					        android:layout_height="wrap_content"
+					        android:orientation="vertical" >
+
+					        <include layout="@layout/divider_line3" />
+
+							<include layout="@layout/main_image_stat" />
+							
+					        <include layout="@layout/divider_line3" />
+
+							<include layout="@layout/main_audio_stat" />
+							
+					        <include layout="@layout/divider_line3" />
+
+					        <include layout="@layout/main_video_stat" />
+
+					        <LinearLayout
+					            android:id="@+id/main_files_stat"
+					            android:layout_width="fill_parent"
+					            android:layout_height="wrap_content"
+					            android:orientation="vertical" >
+
+					            <include layout="@layout/divider_line3" />
+					            
+					            <include layout="@layout/main_files_stat" />
+
+					        </LinearLayout>
+
+					        <include layout="@layout/divider_line3" />
+					    </LinearLayout>
+                    
+                </ScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/main_scan_tab"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <Spinner
+                    android:id="@+id/main_scan_mount_point"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/spinner_color_background"
+                    android:gravity="left"
+                    android:minHeight="40dp"
+                    android:textAppearance="?android:attr/textAppearanceMedium" />
+
+                <ListView
+                    android:id="@+id/main_scan_listview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" >
+                </ListView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/main_message_tab"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical" >
+
+                <ListView
+                    android:id="@+id/main_message_listview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" >
+                </ListView>
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+
+</TabHost>

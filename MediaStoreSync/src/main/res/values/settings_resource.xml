@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+    <string name="settings_debug_msg_diplay_title">Debug information</string>
+	<string name="settings_debug_msg_diplay_summary_dis">Do not show</string>
+	<string name="settings_debug_msg_diplay_summary_ena">Show message tab</string>
+	<string name="settings_debug_msg_diplay">settings_debug_msg_diplay</string>	
+	
+	<string name="settings_log_option_title">Log message</string>
+	<string name="settings_log_option_summary_repl">Recreate log file, after application started</string>
+	<string name="settings_log_option_summary_no">No log file</string>
+	<string name="settings_log_option_summary_append">Append log message to existing log file</string>
+	<string name="settings_log_option_dialog_title">Log file option</string>
+	<string name="settings_log_option">settings_log_option</string>
+	<string-array name="settings_log_option_list_entries">
+        <item>Do not create</item>
+        <item>Recreate</item>
+        <item>Append</item>
+    </string-array>
+    <string-array name="settings_log_option_list_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>	    
+	    
+    <string name="settings_log_dir">settings_log_dir</string>
+	<string name="settings_log_dir_title">Log file directory</string>        
+    <string name="settings_log_dir_summary">Current=</string>        
+        
+	<string name="settings_log_title">Debug message level</string>
+	<string name="settings_log_summary">Current=0</string>
+	<string name="settings_log_dialog_title">Debug message level</string>
+	<string name="settings_log_level">settings_log_level</string>
+	<string-array name="settings_log_list_entries">
+        <item>0:None</item>
+        <item>1:Standard</item>
+        <item>2:Detail</item>
+    </string-array>
+    <string-array name="settings_log_list_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>9</item>
+    </string-array>
+    
+    <string name="settings_default_current_setting">Current=</string>
+    
+    <string name="settings_exit_clean_title">Exit cleanly</string>
+    <string name="settings_exit_clean_summary_dis">Do not kill application process.</string>
+    <string name="settings_exit_clean_summary_ena">Kill application process after application cleanup.</string>
+	<string name="settings_exit_clean">settings_exit_clean</string>
+    
+
+</resources>

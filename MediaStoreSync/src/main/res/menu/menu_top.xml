@@ -1,0 +1,26 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_top_sync"
+          android:title="@string/msgs_menu_sync" 
+          android:icon="@drawable/ic_32_bw_sync"
+          android:showAsAction="ifRoom|withText"/>
+    <item android:id="@+id/menu_top_refresh"
+          android:title="@string/msgs_menu_refresh" 
+          android:icon="@drawable/ic_32_refresh"
+          android:showAsAction="ifRoom|withText"/>
+    <item android:id="@+id/menu_top_scan"
+          android:title="@string/msgs_menu_scan" 
+          android:icon="@drawable/ic_32_bw_media_scan"
+          />
+    <item android:id="@+id/menu_top_browse_logfile"
+          android:title="@string/msgs_menu_browse_logfile" 
+          android:icon="@drawable/ic_32_bw_browse_text"
+          />
+    <item android:id="@+id/menu_top_about"
+          android:title="@string/msgs_menu_about" 
+          android:icon="@android:drawable/ic_menu_info_details"
+          />
+    <item android:id="@+id/menu_top_settings"
+          android:title="@string/msgs_menu_settings" 
+          android:icon="@android:drawable/ic_menu_preferences"
+          />
+</menu>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	
+    <string name="settings_debug_msg_diplay_title">デバッグメッセージの表示</string>
+	<string name="settings_debug_msg_diplay_summary_dis">メッセージタブに表示しない</string>
+	<string name="settings_debug_msg_diplay_summary_ena">メッセージタブに表示する</string>
+	<string name="settings_debug_msg_diplay">settings_debug_msg_diplay</string>	
+	
+	<string name="settings_log_option_title">ログメッセージ </string>
+	<string name="settings_log_option_summary_no">ログメッセージファイルは作成しない</string>
+	<string name="settings_log_option_summary_repl">ログメッセージファイルを起動時に再作成</string>
+	<string name="settings_log_option_summary_append">ログメッセージファイルにメッセージを追記</string>
+	<string name="settings_log_option_dialog_title">ログメッセージのオプション</string>
+	<string name="settings_log_option">settings_log_option</string>
+	<string-array name="settings_log_option_list_entries">
+        <item>作成しない</item>
+        <item>起動時に再作成</item>
+        <item>メッセージを追記</item>
+    </string-array>
+    <string-array name="settings_log_option_list_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>	    
+	    
+    <string name="settings_log_dir">settings_log_dir</string>
+	<string name="settings_log_dir_title">ログファイル ディレクトリ</string>        
+    <string name="settings_log_dir_summary">無指定=</string>        
+        
+	<string name="settings_log_title">デバッグ情報レベル</string>
+	<string name="settings_log_summary">現設定=0</string>
+	<string name="settings_log_dialog_title">デバッグ情報レベル</string>
+	<string name="settings_log_level">settings_log_level</string>
+	<string-array name="settings_log_list_entries">
+        <item>0:デバッグ情報無し</item>
+        <item>1:デバッグ情報</item>
+        <item>2:詳細デバッグ情報</item>
+    </string-array>
+    <string-array name="settings_log_list_values">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>9</item>
+    </string-array>
+    
+    <string name="settings_default_current_setting">現設定=</string>
+    
+    <string name="settings_exit_clean_title">終了時の処理</string>
+    <string name="settings_exit_clean_summary_dis">アプリケーション終了時にプロセスを終了しない</string>
+    <string name="settings_exit_clean_summary_ena">アプリケーション終了時にプロセスを終了する</string>
+	<string name="settings_exit_clean">settings_exit_clean</string>
+    
+
+</resources>

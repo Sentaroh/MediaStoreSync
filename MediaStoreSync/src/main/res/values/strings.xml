@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">MediaStoreSync</string>
+    
+    <string name="msgs_media_store_list_name_hdr">Name</string>
+    <string name="msgs_media_store_list_path_hdr">Path</string>
+    <string name="msgs_media_store_list_media_hdr">Media</string>
+    <string name="msgs_media_store_list_file_hdr">File</string>
+    <string name="msgs_media_store_list_diff_hdr">Reason</string>
+    
+    <string name="msgs_main_tab_name_main">Status</string>
+    <string name="msgs_main_tab_name_message">Message</string>
+    <string name="msgs_main_tab_name_scan">Scan</string>
+    
+    <string name="msgs_main_stat_total">No of. MediaStore file</string>
+    <string name="msgs_main_stat_notfound">No of. File not found</string>
+    <string name="msgs_main_stat_size_unmatch">No of. File size unmatched</string>
+    <string name="msgs_main_stat_lastmod_unmatch">No of. Last modified unmatched</string>
+	<string name="msgs_main_stat_list">Show detail</string>    
+	<string name="msgs_main_stat_sync">Synchronize</string>
+	<string name="msgs_main_stat_use_delete">Delete media store object before update</string>
+	<string name="msgs_main_stat_use_delete_warn">\"Delete media store object before update\" is enabled. this option is a risk that the file is deleted, please use only when cannot synchronize.</string>
+	<string name="msgs_main_terminate_appl">Terminate application?</string>
+	<string name="msgs_main_termination">Application was terminated</string>
+	<string name="msgs_main_started">Application has started</string>
+	<string name="msgs_main_restarted">Application has restarted</string>
+	
+	<string name="msgs_main_move_to_top">Move to top</string>
+	<string name="msgs_main_move_to_bottom">Move to bottom</string>
+	<string name="msgs_main_clear_log_message">Clear log</string>
+	<string name="msgs_main_log_msg_cleared">Log cleared</string>
+	
+    <string name="msgs_context_menu_scan">Scan</string>
+    <string name="msgs_context_menu_select_all">Select all item</string>
+    <string name="msgs_context_menu_unselect_all">Unselect all item</string>
+    
+    <string name="msgs_create_local_filelist_create_error">Filelist creation error</string>
+    
+    <string name="msgs_media_store_category_image">Image</string>
+    <string name="msgs_media_store_category_audio">Audio</string>
+    <string name="msgs_media_store_category_video">Video</string>
+    <string name="msgs_media_store_category_files">files</string>
+
+    <string name="msgs_media_store_detail_title_image">Detail for Image</string>
+    <string name="msgs_media_store_detail_title_audio">Detail for Audio</string>
+    <string name="msgs_media_store_detail_title_video">Detail for Video</string>
+    <string name="msgs_media_store_detail_title_files">Detail for files</string>
+    
+    <string name="msgs_media_store_stats_spin_title">Obtaining MediaStore statistics</string>
+    <string name="msgs_media_store_stats_cancelled">Obtaining MediaStore statistics was cancelled</string>
+    
+    <string name="msgs_local_file_scan_started">Start local file scan</string>
+    <string name="msgs_local_file_scan_title">Local file scan</string>
+    <string name="msgs_local_file_scan_cancelling">Local file scan</string>
+    <string name="msgs_local_file_scan_completed">Local file scan was completed</string>
+    <string name="msgs_local_file_scan_cancelled">Local file scan was cancelled</string>
+    <string name="msgs_local_file_scan_error_occured">Local file scan was ended with error</string>
+    
+    <string name="msgs_local_file_scan_was_completed">Scan was completed. file=</string>
+    <string name="msgs_local_file_scan_was_failed">Scan was failed. file=</string>
+
+    <string name="msgs_local_file_scan_no_scan_file">There are no files to be scanned</string>    
+    
+    <string name="msgs_local_file_scan_result_count" formatted="false">Local file scan No of scan successful=%s, No of scan failed=%s</string>
+    
+    <string name="msgs_media_store_sync_started">Start MediaStore Sync</string>
+    <string name="msgs_media_store_sync_title">MediaStore Sync</string>
+    <string name="msgs_media_store_sync_cancelling">MediaStore Sync cancelling</string>
+    <string name="msgs_media_store_sync_cancelled">MediaStore Sync was cancelled</string>
+    <string name="msgs_media_store_sync_error_occured">Local file scan was ended with error</string>
+    <string name="msgs_media_store_sync_completed">MediaStore Sync was completed</string>
+    
+    <string name="msgs_media_store_sync_delete_error_occured">MediaStore delete failed. file=</string>
+    <string name="msgs_media_store_sync_delete_successfull">Deleted media store itme=</string>
+    
+    <string name="msgs_media_store_sync_scan_processing" formatted="false">Sync is in progress. %s%% Completed.</string>
+    <string name="msgs_media_store_sync_scan_completed">Scanned file=</string>
+    <string name="msgs_media_store_sync_scan_failed">Scan was failed. file=</string>
+
+    <string name="msgs_media_store_sync_result_count" formatted="false">MediaStore delete successful=%s, delete failed=%s</string>    
+    
+    <string name="msgs_menu_sync">Sync MediaStore</string>
+    <string name="msgs_menu_scan">Scan local file</string>
+    <string name="msgs_menu_refresh">Refresh MediaStore Status</string>
+    <string name="msgs_menu_browse_logfile">Browse log file</string>
+    <string name="msgs_menu_about">About MediaStoreSync</string>
+    <string name="msgs_menu_settings">Settings</string>
+    
+    <string name="msgs_media_store_adapter_file_size">, Size:</string>
+    <string name="msgs_media_store_adapter_last_mod">Last modified:</string>
+    <string name="msgs_media_store_adapter_file_size_unmatch">File size unmatched</string>
+    <string name="msgs_media_store_adapter_last_mod_unmatch">Last modified unmatched</string>
+    <string name="msgs_media_store_adapter_file_not_found">File not found</string>
+    
+    <string name="msgs_scan_spinner_title">Select local mount point</string>
+    <string name="msgs_scan_spinner_select_mp">Select scan local mount point</string>
+    <string name="msgs_scan_spinner_not_select_mp">Local mount point does not selected.</string>
+    
+    <string name="msgs_media_store_stat_create_images">Obtaining Images media store information.</string>
+    <string name="msgs_media_store_stat_create_video">Obtaining Video media store information.</string>
+    <string name="msgs_media_store_stat_create_audio">Obtaining Audio media store information.</string>
+    <string name="msgs_media_store_stat_create_files">Obtaining Files media store information.</string>
+    <string name="msgs_media_store_stat_create_images_comp">Obtained Images media store information.</string>
+    <string name="msgs_media_store_stat_create_video_comp">Obtained Video media store information.</string>
+    <string name="msgs_media_store_stat_create_audio_comp">Obtained Audio media store information.</string>
+    <string name="msgs_media_store_stat_create_files_comp">Obtained Files media store information.</string>
+    
+    
+</resources>

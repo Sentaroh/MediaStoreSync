@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="msgs_media_store_list_name_hdr">名前</string>
+    <string name="msgs_media_store_list_path_hdr">パス</string>
+    <string name="msgs_media_store_list_media_hdr">メディア</string>
+    <string name="msgs_media_store_list_file_hdr">ファイル</string>
+    <string name="msgs_media_store_list_diff_hdr">理由</string>
+    
+    <string name="msgs_main_tab_name_main">状態</string>
+    <string name="msgs_main_tab_name_message">メッセージ</string>
+    <string name="msgs_main_tab_name_scan">スキャン</string>
+    
+    <string name="msgs_main_stat_total">メディアストアファイル総数</string>
+    <string name="msgs_main_stat_notfound">ローカルに存在しない</string>
+    <string name="msgs_main_stat_size_unmatch">サイズが違っている</string>
+    <string name="msgs_main_stat_lastmod_unmatch">最終更新日時に差がある</string>
+	<string name="msgs_main_stat_list">詳細表示</string>    
+	<string name="msgs_main_stat_sync">同期実行</string>
+	<string name="msgs_main_stat_use_delete">同期対象のメディアストア オブジェクトを削除し、メディアストア オブジェクトを再作成する</string>
+	<string name="msgs_main_stat_use_delete_warn">\"同期対象のメディアストア オブジェクトを削除し、メディアストア オブジェクトを再作成する\"が有効になっています。このオプションはファイルが削除される危険がありますので、同期できないときだけ使用してください。</string>
+    
+	<string name="msgs_main_terminate_appl">アプリケーションを終了しますか？</string>
+	<string name="msgs_main_termination">アプリケーションが終了しました</string>
+	<string name="msgs_main_started">アプリケーションを開始しました</string>
+	<string name="msgs_main_restarted">アプリケーションが再起動しました</string>
+	
+	<string name="msgs_main_move_to_top">先頭に移動</string>
+	<string name="msgs_main_move_to_bottom">最後部に移動</string>
+	<string name="msgs_main_clear_log_message">ログのクリア</string>
+	<string name="msgs_main_log_msg_cleared">ログをクリアしました</string>
+		
+	<string name="msgs_context_menu_scan">スキャン</string>
+    <string name="msgs_context_menu_select_all">全てを選択する</string>
+    <string name="msgs_context_menu_unselect_all">全ての選択を解除</string>
+    
+    <string name="msgs_create_local_filelist_create_error">ファイルリスト作成中にエラーが発生</string>
+    
+    <string name="msgs_media_store_category_image">イメージ</string>
+    <string name="msgs_media_store_category_audio">オーディオ</string>
+    <string name="msgs_media_store_category_video">ビデオ</string>
+    <string name="msgs_media_store_category_files">ファイル</string>
+
+    <string name="msgs_media_store_detail_title_image">イメージの詳細</string>
+    <string name="msgs_media_store_detail_title_audio">オーディオの詳細</string>
+    <string name="msgs_media_store_detail_title_video">ビデオの詳細</string>
+    <string name="msgs_media_store_detail_title_files">ファイルの詳細</string>
+    
+    <string name="msgs_media_store_stats_spin_title">メディアストア情報の取得中</string>
+    <string name="msgs_media_store_stats_cancelled">メディアストア情報の取得が中止されました</string>
+    
+    <string name="msgs_local_file_scan_started">ローカルファイルスキャンを開始しました</string>
+    <string name="msgs_local_file_scan_title">ローカルファイルスキャン</string>
+    <string name="msgs_local_file_scan_cancelling">ローカルファイルスキャンを中止しています</string>
+    <string name="msgs_local_file_scan_completed">ローカルファイルスキャンが完了しました</string>
+    <string name="msgs_local_file_scan_cancelled">ローカルファイルスキャンが中止されました</string>
+    <string name="msgs_local_file_scan_error_occured">ローカルファイルスキャンでエラーが発生しました</string>
+    
+    <string name="msgs_local_file_scan_was_completed">ファイルスキャン完了。 ファイル=</string>
+    <string name="msgs_local_file_scan_was_failed">ファイルスキャン失敗 。ファイル=</string>
+    
+    <string name="msgs_local_file_scan_no_scan_file">スキャン対象のファイルがありません</string>
+    
+    <string name="msgs_local_file_scan_result_count" formatted="false">ローカルファイル  スキャン成功=%s, スキャン失敗=%s</string>
+
+    <string name="msgs_media_store_sync_started">メディアストア同期を開始しました</string>
+    <string name="msgs_media_store_sync_title">メディアストア同期</string>
+    <string name="msgs_media_store_sync_cancelling">メディアストア同期を中止しています</string>
+    <string name="msgs_media_store_sync_cancelled">メディアストア同期が中止されました</string>
+    <string name="msgs_media_store_sync_error_occured">メディアストア同期でエラーが発生しました</string>
+    <string name="msgs_media_store_sync_completed">メディアストア同期が完了しました</string>
+    
+    <string name="msgs_media_store_sync_delete_error_occured">メディアストアから削除できませんでした。ファイル=</string>
+    <string name="msgs_media_store_sync_delete_successfull">削除したメディアストア登録ファイル情報=</string>
+    
+    <string name="msgs_media_store_sync_scan_processing" formatted="false">同期実行中。 %s%% 終了</string>
+    <string name="msgs_media_store_sync_scan_completed">スキャンしたファイル=</string>
+    <string name="msgs_media_store_sync_scan_failed">ファイルスキャン失敗。 ファイル=</string>
+    
+    <string name="msgs_media_store_sync_result_count" formatted="false">メディアストア削除  成功=%s, 失敗=%s</string>
+    
+    <string name="msgs_menu_sync">メディアストア同期</string>
+    <string name="msgs_menu_scan">ローカルファイルスキャン</string>
+    <string name="msgs_menu_refresh">メディアストア再読込</string>
+    <string name="msgs_menu_browse_logfile">ログファイル表示</string>
+	<string name="msgs_menu_about">MediaStoreSyncについて</string>    
+    <string name="msgs_menu_settings">設定</string>
+    
+    <string name="msgs_media_store_adapter_file_size">, サイズ:</string>
+    <string name="msgs_media_store_adapter_last_mod">最終更新日時:</string>
+    <string name="msgs_media_store_adapter_file_size_unmatch">ファイルサイズが違います</string>
+    <string name="msgs_media_store_adapter_last_mod_unmatch">最終更新日時が違います</string>
+    <string name="msgs_media_store_adapter_file_not_found">ローカルにファイルが存在しません</string>
+    
+    <string name="msgs_scan_spinner_title">マウントポイントの選択</string>
+    <string name="msgs_scan_spinner_select_mp">スキャンマウントポイントの選択</string>
+    <string name="msgs_scan_spinner_not_select_mp">マウントポイントが選択されていません。</string>
+    
+    <string name="msgs_media_store_stat_create_images">イメージメディア情報を取得しています。</string>
+    <string name="msgs_media_store_stat_create_video">ビデオメディア情報を取得しています。</string>
+    <string name="msgs_media_store_stat_create_audio">オーディオメディア情報を取得しています。</string>
+    <string name="msgs_media_store_stat_create_files">ファイルメディア情報を取得しています。</string>
+    <string name="msgs_media_store_stat_create_images_comp">イメージメディア情報を取得しました。</string>
+    <string name="msgs_media_store_stat_create_video_comp">ビデオメディア情報を取得しました。</string>
+    <string name="msgs_media_store_stat_create_audio_comp">オーディオメディア情報を取得しました。</string>
+    <string name="msgs_media_store_stat_create_files_comp">ファイルメディア情報を取得しました。</string>
+    
+</resources>

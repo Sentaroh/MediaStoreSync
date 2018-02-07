@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sentaroh.android.MediaStoreSync">
+
+    <uses-sdk android:minSdkVersion="7" android:targetSdkVersion="11" />
+    
+    <uses-permission 
+   	    android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:icon="@drawable/main_icon"
+        android:label="@string/app_name" android:theme="@style/Main">
+        <activity
+            android:name=".MediaStoreSyncMain"
+            android:label="@string/app_name"
+            android:configChanges="orientation|keyboardHidden"
+            android:launchMode="singleTask">
+<!--             android:configChanges="orientation|keyboardHidden"  -->            
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity 
+	        android:name=".MediaStoreSyncSettings"
+            android:label="@string/app_name"
+            android:screenOrientation="unspecified">
+        </activity>
+    </application>
+
+</manifest>
