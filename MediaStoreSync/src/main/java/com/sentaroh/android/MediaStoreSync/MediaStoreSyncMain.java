@@ -2026,7 +2026,7 @@ public class MediaStoreSyncMain extends AppCompatActivity{
 	private static final String[] msQueryProj=new String[] {
 		MediaStore.MediaColumns.DATA,MediaStore.MediaColumns.DATE_ADDED,
 		MediaStore.MediaColumns.DATE_MODIFIED,MediaStore.MediaColumns._ID,
-		MediaStore.MediaColumns.DISPLAY_NAME, MediaStore.MediaColumns.SIZE};
+		MediaStore.MediaColumns.DISPLAY_NAME, MediaStore.MediaColumns.SIZE, MediaStore.MediaColumns.TITLE};
     private ArrayList<MediaStoreListItem> createMediaStoreImageList(
     		ThreadCtrl tctl, Dialog dialog, final String msg_txt) {
     	ArrayList<MediaStoreListItem> msl=new ArrayList<MediaStoreListItem>();
@@ -2035,7 +2035,8 @@ public class MediaStoreSyncMain extends AppCompatActivity{
     	ContentResolver resolver = getContentResolver();
     	//build image
         Cursor ci = resolver.query(
-        	MediaStore.Images.Media.EXTERNAL_CONTENT_URI ,msQueryProj ,null ,null ,"_data");
+//        	MediaStore.Images.Media.EXTERNAL_CONTENT_URI ,msQueryProj ,null ,null ,"_data");
+            MediaStore.Images.Media.EXTERNAL_CONTENT_URI ,null ,null ,null ,"_data");
         
         if (ci!=null ) {
         	int proc_count=0;
@@ -2049,6 +2050,8 @@ public class MediaStoreSyncMain extends AppCompatActivity{
 	        	long date_added=ci.getLong(ci.getColumnIndex( MediaStore.Images.Media.DATE_ADDED));
 	        	long date_modifiedx=ci.getLong(ci.getColumnIndex( MediaStore.Images.Media.DATE_MODIFIED));
 	        	long media_size=ci.getLong(ci.getColumnIndex( MediaStore.Images.Media.SIZE));
+                String media_title=ci.getString(ci.getColumnIndex( MediaStore.Images.Media.TITLE));
+                String bu_name=ci.getString(ci.getColumnIndex( MediaStore.Images.Media.BUCKET_DISPLAY_NAME));
 	        	long date_modified=0;
 	        	if (Build.VERSION.SDK_INT<=10) {//Android 3.0以下のバグ回避
 		        	if (date_modifiedx>=1000000000000L) date_modified=date_modifiedx/1000;
@@ -2068,8 +2071,9 @@ public class MediaStoreSyncMain extends AppCompatActivity{
 
 	        	}
 
-	        	sendThreadDebugLogMsg(2,"I","Image list item" +
+                if (debug_level>=2) sendThreadDebugLogMsg(2,"I","Image list item" +
 	        			", Name="+display_name+
+//                        ", Title="+bu_name+
 	        			", Path="+file_path+
 	        			", Date_added="+sdfDateTime.format(date_added*1000)+
 	        			", Date_modified="+sdfDateTime.format(date_modified*1000));
@@ -2254,8 +2258,9 @@ public class MediaStoreSyncMain extends AppCompatActivity{
     	        while(ci.moveToNext() ){
     	        	if (!tctl.isEnabled()) break;
     	        	boolean media_file_different=false, m_s_d=false, m_m_d=false, f_n_e=false;
-    	        	String file_path=ci.getString( ci.getColumnIndex( MediaStore.Files.FileColumns.DATA));
+    	        	String file_path   =ci.getString( ci.getColumnIndex( MediaStore.Files.FileColumns.DATA));
     	        	String display_name=ci.getString( ci.getColumnIndex( MediaStore.Files.FileColumns.DATA));
+    	        	if (file_path.equals("")) file_path=display_name;
     	        	long date_added=ci.getLong( ci.getColumnIndex( MediaStore.Files.FileColumns.DATE_ADDED));
     	        	long date_modifiedx=ci.getLong( ci.getColumnIndex( MediaStore.Files.FileColumns.DATE_MODIFIED));
     	        	long media_size=ci.getLong( ci.getColumnIndex( MediaStore.Files.FileColumns.SIZE));
